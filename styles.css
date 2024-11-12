@@ -1,0 +1,71 @@
+/* Basic white background for the whole page */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+}
+
+/* Header styling */
+header h1 {
+    text-align: center;
+    font-size: 3em;
+    color: black;
+    font-family: 'Graffiti', cursive; /* Add a graffiti font here */
+    margin: 20px 0;
+}
+
+/* Container for the animated flies */
+#fly-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none; /* Allow clicks through flies */
+}
+
+/* Styling for the chat box */
+#chat-box {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    display: flex;
+    gap: 5px;
+}
+
+#chat-input {
+    width: 200px;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+}
+
+#send-button {
+    padding: 8px 12px;
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Styling for posted messages */
+.message {
+    position: absolute;
+    font-size: 1em;
+    color: black;
+    font-family: Arial, sans-serif;
+}
+
+/* Styling for each fly */
+.fly {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-image: url('fly.png'); /* Use the path to your fly image */
+    background-size: cover;
+    pointer-events: none; /* Allow clicks through flies */
+}
